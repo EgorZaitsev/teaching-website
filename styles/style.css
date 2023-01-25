@@ -2,7 +2,7 @@
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
+  max-width: 1980px;
   /* выше установили ограничение по максимальной ширине */
   margin: 0;
   /* выше для экранов больше 1600px отцентрировали весь контент */
@@ -15,7 +15,8 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-	margin-bottom: 100px;
+	margin-bottom: 110px;
+	position: relative;
   /* выше установили ограничения для секции */
 }
 
@@ -81,6 +82,47 @@
 	z-index: -2;
 	
 }
+
+.description {
+	margin-bottom: 110px;
+}
+
+.two-columns {
+	width: 80%;
+	display: flex;
+	margin: auto;
+	justify-content: space-between;  
+}
+
+.two-columns__brief {
+	width: 175px;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: normal;
+	color: #2f80ed;
+}
+
+.two-columns__paragrahp {
+	line-height: 34px;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.two-columns__span-accent {
+	line-height: 34px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.two-columns__main-text {
+	display: flex;
+	min-width: 784px;
+	width: 80%;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
