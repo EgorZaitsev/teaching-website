@@ -22,6 +22,10 @@
   /* выше установили ограничения для секции */
 }
 
+.text_white {
+	color: white;
+}
+
 .logo_place_header {
 	position: absolute;
 	top: 30px;
@@ -152,6 +156,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	position:relative;
+	z-index: 1;
 }
 
 .table__cell {
@@ -216,7 +222,10 @@
 }
 
 .kaufman{
+	position:relative;
 	background-color: #1f1f1f;
+	overflow: hidden;
+	z-index: -1;
 }
 .title__theme_dark {
 	color: white;
@@ -232,11 +241,91 @@
 	margin: 0;
 }
 
-
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
 	color:white;
   margin-right: 0;
   margin-top: 80px;
 }
+
+.table__picture {
+	width: 877px;
+	height: 877px;
+	z-index: -1;
+	position: absolute;
+	top: 30px;
+	right: -210px;
+
+}
+
+.logo_place_footer{
+	width: 228px;
+	height: 32px;
+}
+
+.footer {
+	padding: 60px 0 40px;
+	max-height: 350px;
+	background-color: #1f1f1f;
+}
+
+.footer__columns {
+	margin:auto;
+	width: 90%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer__author {
+	margin:10 0;
+	line-height: 25px;
+	font-size: 18px;
+	font-weight: normal;
+
+}
+
+.footer__column_content_copyright {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-basis: 711px;
+}
+
+.footer__column_content_info {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+}
+
+.footer__column_content_social {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+	
+}
+
+.footer__column-links {
+	text-decoration: none;
+	color: white;
+	margin: 0 0 10px;
+	line-height: 30px;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.footer__social-icon {
+	margin-right:  10px;
+	padding-top: 5px;
+}
+
+.footer__column-heading {
+	margin: 0 0 20px;
+	line-height: 30px;
+	font-size: 18px;
+	font-weight: 600;
+	
+}
+
+
