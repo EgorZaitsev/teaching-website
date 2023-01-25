@@ -122,6 +122,10 @@
 	justify-content: space-between;
 }
 
+.digits {
+	margin-bottom: 110px;
+}
+
 .title {
 	text-align: center;
 	width: 60%;
@@ -165,6 +169,45 @@
 	line-height: 1.2;
 	font-size: 18px;
 	font-weight: normal;
+}
+
+.feynman {
+	position: relative;
+	height: 890px;
+}
+
+.feynman__title {
+	margin: 0 auto 70px;
+	text-align: center;
+	line-height: 	1.15;
+	font-size: 120px;
+	font-weight: 600;
+}
+
+.feynman__subtitle {
+	margin: 0 auto;
+	text-align: center;
+	line-height: 51px;
+	font-size: 36px;
+	font-weight: normal;
+}
+
+.feynman__link {
+	text-decoration: none;
+	color: #2f80ed;
+	position: absolute;
+	top: 39%;
+	right: 48px;
+	line-height: 51px;
+	font-size: 36px;
+	font-weight: normal;
+}
+
+.feynman__picture {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
 }
 
 /* и элемента с модификатором вида ключ-значение */
